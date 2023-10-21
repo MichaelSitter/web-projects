@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.104.0",
+  "pnpmVersion": "8.9.2",
+  "ensureConsistentVersions": true,
+  "projectFolderMinDepth": 2,
+  "gitPolicy": {
+    "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
+  },
+
+  "repository": {
+    "url": "https://github.com/MichaelSitter/web-projects"
+  },
+
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+
+  "telemetryEnabled": true,
+
+  /**
+   * Allows creation of hotfix changes. This feature is experimental so it is disabled by default.
+   * If this is set, 'rush change' only allows a 'hotfix' change type to be specified. This change type
+   * will be used when publishing subsequent changes from the monorepo.
+   */
+  // "hotfixChangeEnabled": false,
+  "projects": [
+
+  ]
+}
